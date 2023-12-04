@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1>Formulário de Informações de Data e Hora</h1>
+  <form action="http://localhost:3000/info-instante-atual" method="get">
+    <label for="parametro">Escolha o tipo de informação:</label>
+    <select id="parametro" name="parametro">
+      <option value="dma">Data (dia, ano e mês em formato numérico)</option>
+      <option value="ds">Nome do dia da semana</option>
+      <option value="dmahms">Data, horas, minutos e segundos</option>
+      <option value="hms">Horas, minutos e segundos</option>
+    </select>
+    <button type="submit">Obter Informação</button>
+  </form>
+</body>
+</html>
